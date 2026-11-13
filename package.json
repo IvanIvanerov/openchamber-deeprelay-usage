@@ -1,0 +1,47 @@
+{
+  "name": "openchamber-deeprelay-usage",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepRelay plan quota, wallet balance and spend on OpenChamber's Usage page.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "check": "npm test"
+  },
+  "devDependencies": {
+    "@openchamber/sdk": "2.7.1"
+  },
+  "keywords": [
+    "openchamber",
+    "openchamber-extension",
+    "deeprelay",
+    "usage",
+    "quota",
+    "cost-tracking"
+  ],
+  "openchamber": {
+    "apiVersion": 1,
+    "engines": {
+      "openchamber": ">=2.7.1"
+    },
+    "contributes": {
+      "panel": {
+        "id": "deeprelay",
+        "name": "DeepRelay",
+        "icon": "dollar"
+      },
+      "service": {
+        "entry": "service/main.js",
+        "runtime": "host",
+        "provides": ["quota"]
+      },
+      "quota": {
+        "providers": ["deeprelay"]
+      }
+    }
+  }
+}

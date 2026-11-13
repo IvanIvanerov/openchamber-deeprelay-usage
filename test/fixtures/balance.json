@@ -1,0 +1,8 @@
+{
+  "balance_cents": 4250,
+  "balance_dollars": 42.5,
+  "auto_pay_enabled": false,
+  "auto_pay_threshold_cents": 0,
+  "auto_pay_amount_cents": 0,
+  "burn_cents_per_hour": 0
+}

@@ -1,0 +1,25 @@
+name: Feature request
+description: Something the card could show that it does not
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What should the card show?
+      description: Which number, and in which window?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you want it?
+      description: What decision does it help you make?
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Where would the number come from?
+      description: A DeepRelay endpoint, a field of the answer, or somewhere else.

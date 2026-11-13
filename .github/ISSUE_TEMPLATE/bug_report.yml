@@ -1,0 +1,60 @@
+name: Bug report
+description: Something in the card is wrong or missing
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please do not paste an API key anywhere in an issue.
+
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      placeholder: v0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: openchamber
+    attributes:
+      label: OpenChamber version
+      placeholder: 2.7.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: card
+    attributes:
+      label: What does the card show?
+      options:
+        - The card is missing from the Usage page
+        - The card says "Not configured"
+        - The card shows an error
+        - The numbers are wrong
+        - The numbers are stale
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: The card's error text, if it shows one.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log lines
+      description: From ~/Library/Logs/OpenChamber/main.log. Redact keys and paths you would rather keep private.
+    render: shell

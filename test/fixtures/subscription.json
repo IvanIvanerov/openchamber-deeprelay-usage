@@ -1,0 +1,52 @@
+{
+  "subscribed": true,
+  "status": "active",
+  "cancel_at_period_end": false,
+  "current_period_start": "2026-11-10T20:17:05Z",
+  "current_period_end": "2026-12-10T20:17:05Z",
+  "plan": {
+    "key": "plus",
+    "name": "Plus",
+    "price": { "amount_cents": 499, "currency": "usd", "interval": "month", "interval_count": 1 }
+  },
+  "quota": {
+    "input_tokens_monthly": 2500000000,
+    "output_tokens_monthly": 250000000,
+    "weekly_input_tokens": 625000000,
+    "weekly_output_tokens": 62500000,
+    "max_usage_micro_cents": 50000000000,
+    "payg_discount_bp": 0,
+    "searches_monthly": 500
+  },
+  "usage": {
+    "period_start": "2026-11-10T20:17:05Z",
+    "period_end": "2026-12-10T20:17:05Z",
+    "weighted_input_tokens": 125000000,
+    "weighted_output_tokens": 12500000,
+    "weekly_weighted_input_tokens": 62500000,
+    "weekly_weighted_output_tokens": 6250000,
+    "cost_micro_cents": 1951262551,
+    "recent_payg_calls_24h": 0,
+    "searches": 12,
+    "by_model": [
+      {
+        "model": "deeprelay/deepseek-v4.1-flash",
+        "input_tokens": 100000000,
+        "cached_input_tokens": 80000000,
+        "output_tokens": 10000000,
+        "usage_factor_milli": 1000,
+        "weighted_input_tokens": 100000000,
+        "weighted_output_tokens": 10000000
+      },
+      {
+        "model": "deeprelay/glm-5.3-flash",
+        "input_tokens": 25000000,
+        "cached_input_tokens": 20000000,
+        "output_tokens": 2500000,
+        "usage_factor_milli": 1750,
+        "weighted_input_tokens": 43750000,
+        "weighted_output_tokens": 4375000
+      }
+    ]
+  }
+}
